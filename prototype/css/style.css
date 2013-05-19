@@ -1,0 +1,144 @@
+div.demo-with-image
+{
+	padding-left: 10px;
+}
+
+.content 
+{
+	display:none;
+	border: #ddd solid 1px;
+	margin: auto;
+	padding: 10px;
+	vertical-align: top;
+}
+
+#demo-with-image .expander.expanded 
+{
+	padding-left: 13px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-image: url(../images/expanded.gif);
+}
+
+#demo-with-image .expander.collapsed	
+{
+	padding-left: 13px;
+	background-position: left center;
+	background-repeat: no-repeat;
+	background-image: url(../images/collapsed.gif);
+}        
+
+a.expander
+{
+	font-weight: bold;
+	text-decoration: none;
+	color: #999;
+	font-size: 1.5em;
+}
+
+.linkButton
+{
+	color:#000;
+	border: 1px solid #000;
+	background-color: #eee;
+	border-radius: 5px ;
+	-moz-border-radius: 15px;
+	-webkit-border-radius: 15px;
+	display: inline-block;
+    line-height: 1em;
+	padding:0.5em;
+	width:10em;
+	text-align:center;
+}
+
+.linkButton a
+{
+	text-decoration:none;
+}
+
+#productImage
+{
+    /*border: 1px solid #000;*/
+    width: 100%; height: 100%; min-height: 100%; margin: 0 auto; text-align: center;
+}
+
+.ui-widget-overlay
+{
+    opacity: .50 !important; /* Make sure to change both of these, as IE only sees the second one */
+    filter: Alpha(Opacity=50) !important;
+
+    background-color: rgb(50, 50, 50) !important; /* This will make it darker */
+}
+
+div#map
+{
+    width: 584px;
+    height: 500px;
+    min-height: 400px;
+    background-image: url(../products/images/cup.jpg);
+    background-repeat: no-repeat;
+    background-position:center top;
+    padding: 0px;
+    margin: 0 auto;
+    /*border: 1px solid #000;*/
+}
+
+div#textDisplay
+{
+    display:none;
+    top: 175px;
+    left: 225px;
+    width: 58px;
+    height: 58px;
+    min-height: 38px;
+    border: 2px dashed #666;
+    cursor: move;
+    /*opacity:0.5;*/
+    float: left;
+    z-index: 200;
+}
+
+div#imageDisplay
+{
+    display:none;
+    left: 225px;
+    top: 175px;
+    /*
+    width: 150px;
+    height: 150px;
+    min-height: 150px;
+    */
+    border: 2px dashed #666;
+    cursor: move;
+    /*opacity:0.5;*/
+    float: left;
+    z-index: 100;
+}
+
+.ui-wrapper {
+    overflow:   visible !important;}
+
+.ui-resizable-handle {
+    background:    #f5dc58;
+    border:        1px solid #FFF;
+
+    z-index:    2;}
+
+.ui-rotatable-handle {
+    background:    #f5dc58;
+    border:        1px solid #FFF;
+    border-radius: 5px;
+    -moz-border-radius:    5px;
+    -o-border-radius:      5px;
+    -webkit-border-radius: 5px;
+    cursor:        pointer;
+
+    height:        10px;
+    left:          50%;
+    margin:        0 0 0 -5px;
+    position:      absolute;
+    top:           -5px;
+    width:         10px;}
+
+.ui-rotatable-handle.clone {
+    visibility:  hidden;}
